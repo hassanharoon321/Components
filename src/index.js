@@ -6,7 +6,10 @@ import ApprovalCard from "./ApprovalCard";
 import Services from "./Services";
 import ChildrenProps from "./ChildrenProps";
 import One from "./One";
-import Two from "./Two"
+import Two from "./Two";
+import ImageComponent from "./ImageComponent";
+import Alertt from './Alertt';
+import ButtonJS from "./ButtonJS";
 
 const App = ()=>{
     return(
@@ -35,8 +38,11 @@ const App = ()=>{
             <Services  header="Changes in Services" text="We just Updated our Privacy policy here to better service our customers"  />
             <Services  header="Changes in Services" text="We just Updated our Privacy policy here to better service our customers"  /> */}
             
-            <ChildrenProps><One data="No documents are listed for customers" button="Add Documents"/></ChildrenProps>
-            <ChildrenProps><Two heading="For your Information"/></ChildrenProps>
+            {/* <ChildrenProps><One data="No documents are listed for customers" button="Add Documents"/></ChildrenProps>
+            <ChildrenProps><Two heading="For your Information"/></ChildrenProps> */}
+            
+            <ImageComponent> <Alertt/> </ImageComponent>
+            <ImageComponent> <ButtonJS/> </ImageComponent>
             
         
         </div>

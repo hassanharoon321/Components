@@ -3,12 +3,16 @@ import ReactDOM from "react-dom";
 import CommentDetail from "./CommentDetails";
 import faker from "faker";
 import ApprovalCard from "./ApprovalCard";
+import Services from "./Services";
+import ChildrenProps from "./ChildrenProps";
+import One from "./One";
+import Two from "./Two"
 
 const App = ()=>{
     return(
         <div className="ui container comments">
 
-            <ApprovalCard>
+            {/* <ApprovalCard>
                 <div>
                     <h4>Warning</h4>
                     Are you want to sure to Continue?
@@ -25,8 +29,16 @@ const App = ()=>{
 
             <ApprovalCard>
             <CommentDetail author="Carry" timeAgo="Today at 3:00PM" avatar={faker.image.image()} comment="InshAllah struggles give you Success"/>
-            </ApprovalCard>
+            </ApprovalCard> */}
+
+            {/* <Services  header="Changes in Services" text="We just Updated our Privacy policy here to better service our customers"  />
+            <Services  header="Changes in Services" text="We just Updated our Privacy policy here to better service our customers"  />
+            <Services  header="Changes in Services" text="We just Updated our Privacy policy here to better service our customers"  /> */}
             
+            <ChildrenProps><One data="No documents are listed for customers" button="Add Documents"/></ChildrenProps>
+            <ChildrenProps><Two heading="For your Information"/></ChildrenProps>
+            
+        
         </div>
     );
 }
